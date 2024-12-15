@@ -6,8 +6,12 @@ import path from "path";
 import { uploadFile } from "./aws";
 import { createClient } from "redis";
 import cors from "cors";
+import dotenv from 'dotenv';
+dotenv.config();
 
-const publisher = createClient({ url: 'redis://127.0.0.1:6379' });
+const publisher = createClient({ 
+  url: process.env.REDIS_URL || 'redis://127.0.0.1:6379' 
+});
 publisher.connect();
 
 const subscriber = createClient({ url: 'redis://127.0.0.1:6379' });
