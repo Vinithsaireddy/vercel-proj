@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && vite build",
-    "dev": "vite",
-    "start": "vercel dev"
-  },
+  "build": "npm install vite && tsc && vite build",  
+  "dev": "vite",                 
+  "start": "vercel dev"          
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.3",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
   }
 }
