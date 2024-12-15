@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js"
-  },
+  "build": "tsc && vite build",
+  "dev": "vite",
+  "start": "vercel dev" 
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,5 +20,8 @@
     "express": "^4.21.2",
     "redis": "^4.7.0",
     "simple-git": "^3.27.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
   }
 }
