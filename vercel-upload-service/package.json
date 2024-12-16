@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "vite",
-    "start": "node index.js"
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
