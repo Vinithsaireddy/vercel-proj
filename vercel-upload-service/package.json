@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "vite",
-    "start": "vercel dev"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
